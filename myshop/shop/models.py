@@ -31,7 +31,7 @@ class Product(models.Model):
                                 decimal_places=2)
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
-    update = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ['name']
